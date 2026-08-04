@@ -78,7 +78,7 @@ portfolio/
 ### Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Labdhimandovara/labdhi-portfolio.git
 cd portfolio
 ```
 
