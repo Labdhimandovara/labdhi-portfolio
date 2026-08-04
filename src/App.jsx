@@ -13,37 +13,20 @@ import Chatbot from "./components/Chatbot";
 function App() {
   return (
     <div className="bg-[#FAF8F5] min-h-screen text-[#23211F]">
-      {/* Navigation */}
       <Navbar />
-
-      {/* Hero Section */}
       <Hero />
 
-      {/* Main Container */}
       <main className="max-w-7xl mx-auto">
-        {/* About Me Story */}
         <About />
-
-        {/* Technical Skills */}
         <Skills />
-
-        {/* Featured Case Studies */}
         <Projects />
-
-        {/* Hackathon Projects */}
         <HackathonProjects />
-
-        {/* Experience Timeline, Hackathons, and Certifications */}
         <Timeline />
-
-        {/* Artwork Polaroid Section */}
         <CreativeCorner />
-
-        {/* Contact Form and Footer */}
         <Contact />
-        <Chatbot />
-        
       </main>
+
+      <Chatbot />
     </div>
   );
 }
