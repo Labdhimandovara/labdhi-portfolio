@@ -263,13 +263,13 @@ export const portfolioData = {
       title: "Expressionist Portrait",
       image: artwork3,
       tag: "Color Composition",
-      description: "A vibrant mixed-media portrait built from layered color blocks, symbolic eyes, hands, leaves, and flowing shapes to express emotion and identity."
+      description: "A vibrant mixed-media portrait built from layered color blocks, symbolic eyes, hands, leaves, and a bird to express emotion and identity."
     },
     {
       title: "Art Exhibition Wall",
       image: artwork4,
       tag: "Collection",
-      description: "A wall display of many finished drawings and paintings, bringing together portraits, still life, scenery, and expressive studies in one curated showcase."
+      description: "A wall display of many finished drawings and paintings mounted outdoors, bringing together portraits, scenery, and expressive studies."
     }
   ]
 };

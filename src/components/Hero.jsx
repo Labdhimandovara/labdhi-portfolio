@@ -144,17 +144,17 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative w-[20rem] h-[25rem] md:w-[24rem] md:h-[30rem]"
+            className="relative w-[20rem] h-[20rem] md:w-[24rem] md:h-[24rem]"
           >
             {/* Morphing Background */}
-            <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-tr from-[#C87A53]/20 to-[#C87A53]/10 blur-md" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#C87A53]/20 to-[#C87A53]/10 blur-md" />
             
             {/* Morphing Image Container */}
-            <div className="absolute inset-2 overflow-hidden rounded-[2rem] border-2 border-[#E5DFD9] shadow-inner bg-[#F4EFEA] p-2">
+            <div className="absolute inset-2 overflow-hidden rounded-full border-2 border-[#E5DFD9] shadow-inner bg-[#F4EFEA] p-2">
               <img
                 src={profilePhoto}
                 alt={name}
-                className="w-full h-full object-contain object-center transform hover:scale-[1.02] transition-transform duration-500"
+                className="w-full h-full rounded-full object-cover object-[center_top] transform hover:scale-[1.02] transition-transform duration-500"
               />
             </div>
 

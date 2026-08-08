@@ -20,7 +20,7 @@ export default function Projects() {
         <div className="text-left mb-20 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">Case Studies</span>
           <h2 className="text-3xl md:text-5xl font-serif font-black tracking-tight text-[#23211F]">
-            Featured Engineering Projects
+            Featured Projects
           </h2>
           <p className="text-sm text-[#706C68] max-w-lg font-light leading-relaxed">
             Detailed walkthroughs of AI models, public safety frameworks, and multilingual dialog systems built for global challenges.
