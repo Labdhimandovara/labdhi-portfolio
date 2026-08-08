@@ -6,7 +6,6 @@ import { portfolioData } from '../data/portfolioData';
 export default function Timeline() {
   const experiences = portfolioData.experience;
   const educations = portfolioData.education;
-  const hackathons = portfolioData.hackathons;
   const certifications = portfolioData.certifications;
 
   const [activeTab, setActiveTab] = useState('experience');
@@ -32,19 +31,8 @@ export default function Timeline() {
               activeTab === 'experience' ? 'text-[#C87A53]' : 'text-[#706C68] hover:text-[#23211F]'
             }`}
           >
-            Work & Leadership
+            Experience & Education
             {activeTab === 'experience' && (
-              <motion.div layoutId="timelineActiveLine" className="absolute bottom-0 left-0 w-full h-[2px] bg-[#C87A53]" />
-            )}
-          </button>
-          <button
-            onClick={() => setActiveTab('hackathons')}
-            className={`pb-4 px-6 text-sm font-sans font-bold uppercase tracking-wider transition-colors duration-200 relative ${
-              activeTab === 'hackathons' ? 'text-[#C87A53]' : 'text-[#706C68] hover:text-[#23211F]'
-            }`}
-          >
-            Hackathons
-            {activeTab === 'hackathons' && (
               <motion.div layoutId="timelineActiveLine" className="absolute bottom-0 left-0 w-full h-[2px] bg-[#C87A53]" />
             )}
           </button>
@@ -100,19 +88,6 @@ export default function Timeline() {
               ))}
 
               {/* Education Sub-Section */}
-
-              {/* Hackathons & Awards */}
-              <button
-                onClick={() => setActiveTab('hackathons')}
-                className={`pb-4 px-6 text-sm font-sans font-bold uppercase tracking-wider transition-colors duration-200 relative ${
-                  activeTab === 'hackathons' ? 'text-[#C87A53]' : 'text-[#706C68] hover:text-[#23211F]'
-                }`}
-              >
-                Hackathons
-                {activeTab === 'hackathons' && (
-                  <motion.div layoutId="timelineActiveLine" className="absolute bottom-0 left-0 w-full h-[2px] bg-[#C87A53]" />
-                )}
-              </button>
               <div className="pt-8">
                 <h3 className="text-lg font-bold text-[#23211F] mb-6 flex items-center">
                   <GraduationCap size={20} className="mr-2 text-[#C87A53]" />
@@ -137,45 +112,7 @@ export default function Timeline() {
             </div>
           )}
 
-          {/* Hackathons & Awards */}
-          {activeTab === 'hackathons' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {hackathons.map((hack, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -6 }}
-                  className="p-8 bg-white border border-[#E5DFD9] rounded-3xl text-left flex flex-col justify-between space-y-6 relative overflow-hidden shadow-sm hover:shadow-md cursor-default group"
-                >
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#C87A53]/5 rounded-bl-full group-hover:bg-[#C87A53]/10 transition-colors" />
 
-                  <div className="space-y-4">
-                    <span className="inline-flex items-center px-3.5 py-1 bg-[#C87A53] text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-sm">
-                      <Award size={12} className="mr-1.5" />
-                      {hack.badge}
-                    </span>
-
-                    <h3 className="text-2xl font-serif font-black text-[#23211F] tracking-tight pt-2">
-                      {hack.title}
-                    </h3>
-                    <p className="text-xs font-semibold text-[#706C68]">{hack.host} | {hack.period}</p>
-                  </div>
-
-                  <ul className="space-y-3">
-                    {hack.highlights.map((point) => (
-                      <li key={point} className="text-sm text-[#706C68] font-light leading-relaxed flex items-start">
-                        <CheckCircle2 size={14} className="mr-2.5 mt-0.5 text-emerald-600 flex-shrink-0" />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          )}
 
           {/* Certifications Elegant Cards */}
           {activeTab === 'certifications' && (

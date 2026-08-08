@@ -163,6 +163,12 @@ export const portfolioData = {
 
   experience: [
     {
+      role: "Junior Prompt Engineer",
+      company: "Edysor AI",
+      period: "Jul 2026 - Present",
+      description: "Developed browser-based AI voice agents using Agora SDK, Pipecat, WebRTC, Deepgram, Groq, and Cartesia, implementing streaming speech recognition, LLM inference, and text-to-speech pipelines."
+    },
+    {
       role: "Magazine Head",
       company: "Department Magazine (SIT)",
       period: "Aug 2025 - Present",
