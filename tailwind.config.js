@@ -17,8 +17,9 @@ export default {
         }
       },
       fontFamily: {
-        serif: ['Lora', 'Georgia', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        display: ['Syne', 'sans-serif'],
+        serif: ['Syne', 'sans-serif'], // Fallback mapping in case of old classes
+        sans: ['"DM Sans"', 'sans-serif'],
         mono: ['"Geist Mono"', 'monospace'],
       }
     },

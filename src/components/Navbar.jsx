@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo / Personal Brand */}
         <a href="#" className="flex items-center space-x-2 text-[#23211F] group">
-          <div className="w-8 h-8 rounded-lg bg-[#C87A53] flex items-center justify-center text-white font-serif font-bold text-lg shadow-sm">
+          <div className="w-8 h-8 rounded-lg bg-[#C87A53] flex items-center justify-center text-white font-display font-bold text-lg shadow-sm">
             L
           </div>
           <span className="font-sans font-bold tracking-tight text-lg group-hover:text-[#C87A53] transition-colors duration-200">

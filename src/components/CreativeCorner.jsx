@@ -14,7 +14,7 @@ export default function CreativeCorner() {
         {/* Section Heading */}
         <div className="text-left mb-16 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">The Creative Side</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-black tracking-tight text-[#23211F] flex items-center">
+          <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-[#23211F] flex items-center">
             Creative Corner
           </h2>
           <p className="text-sm text-[#706C68] max-w-lg font-light leading-relaxed">
@@ -59,7 +59,7 @@ export default function CreativeCorner() {
                 </div>
 
                 {/* Polaroid Caption */}
-                <div className="text-left mt-5 space-y-1.5 font-serif">
+                <div className="text-left mt-5 space-y-1.5 font-display">
                   <div className="flex justify-between items-center">
                     <h3 className="font-bold text-base text-[#23211F] leading-tight truncate w-[75%]">
                       {art.title}
@@ -112,7 +112,7 @@ export default function CreativeCorner() {
                 </div>
 
                 {/* Caption details */}
-                <div className="text-left mt-6 space-y-2 font-serif">
+                <div className="text-left mt-6 space-y-2 font-display">
                   <div className="flex justify-between items-center">
                     <h3 className="font-bold text-xl text-[#23211F]">
                       {selectedArt.title}

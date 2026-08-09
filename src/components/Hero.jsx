@@ -77,11 +77,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-2"
           >
-            <h2 className="text-sm uppercase tracking-widest font-semibold text-[#706C68]">Hello, I am</h2>
-            <h1 className="text-5xl md:text-7xl font-serif font-black tracking-tight text-[#23211F] leading-tight">
+            <h2 className="text-sm uppercase tracking-widest font-semibold text-[#706C68] font-sans">Hello, I am</h2>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] xl:text-[4.5rem] font-display font-bold tracking-tight text-[#23211F] leading-[1.1] whitespace-nowrap overflow-visible">
               {name}
             </h1>
-            <div className="h-10 flex items-center text-xl md:text-2xl font-sans font-bold text-[#C87A53]">
+            <div className="h-10 flex items-center text-xl md:text-2xl font-sans font-bold text-[#C87A53] pt-1">
               <span>{currentText}</span>
               <span className="w-[3px] h-6 bg-[#C87A53] ml-1 animate-pulse" />
             </div>
@@ -91,7 +91,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base md:text-lg text-[#706C68] max-w-xl leading-relaxed font-light"
+            className="text-base md:text-lg text-[#706C68] max-w-xl leading-relaxed font-light font-sans"
           >
             {tagline} Specializing in machine learning systems, human-centered speech analytics, and responsive interface architectures.
           </motion.p>
@@ -101,18 +101,18 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-4 items-center pt-2"
+            className="flex flex-wrap gap-4 items-center pt-2 font-sans"
           >
             <a
               href="#projects"
-              className="flex items-center space-x-2 px-6 py-3 bg-[#23211F] hover:bg-[#C87A53] text-white font-medium rounded-xl transition-all duration-300 shadow-md hover:shadow-lg group"
+              className="flex items-center space-x-2 px-6 py-3 bg-[#23211F] hover:bg-[#C87A53] text-white font-medium rounded-xl transition-all duration-300 shadow-sm group"
             >
               <span>Explore My Work</span>
               <ArrowRight size={18} className="transform transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a
               href="#contact"
-              className="flex items-center space-x-2 px-6 py-3 bg-[#F4EFEA] hover:bg-[#E5DFD9] text-[#23211F] border border-[#E5DFD9] font-medium rounded-xl transition-all duration-300"
+              className="flex items-center space-x-2 px-6 py-3 bg-[#F4EFEA] hover:bg-[#E5DFD9] text-[#23211F] border border-[#E5DFD9] font-medium rounded-xl transition-all duration-300 shadow-sm"
             >
               <Mail size={18} />
               <span>Contact Me</span>
@@ -141,32 +141,31 @@ export default function Hero() {
         {/* Right: Picture Container */}
         <div className="lg:col-span-5 flex justify-center items-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative w-[20rem] h-[20rem] md:w-[24rem] md:h-[24rem]"
+            className="relative w-[18rem] sm:w-[20rem] md:w-[22rem] lg:w-[26rem] aspect-[4/5] mx-auto"
           >
-            {/* Morphing Background */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#C87A53]/20 to-[#C87A53]/10 blur-md" />
-            
-            {/* Morphing Image Container */}
-            <div className="absolute inset-2 overflow-hidden rounded-full border-2 border-[#E5DFD9] shadow-inner bg-[#F4EFEA] p-2">
-              <img
-                src={profilePhoto}
-                alt={name}
-                className="w-full h-full rounded-full object-cover object-[center_top] transform hover:scale-[1.02] transition-transform duration-500"
-              />
+            {/* Clean Editorial Frame */}
+            <div className="absolute inset-0 bg-white p-2 md:p-3 rounded-2xl shadow-sm border border-[#E5DFD9]">
+              <div className="relative w-full h-full overflow-hidden rounded-xl bg-[#F4EFEA]">
+                <img
+                  src={profilePhoto}
+                  alt={name}
+                  className="w-full h-full object-cover object-[center_top] transform hover:scale-[1.02] transition-transform duration-700"
+                />
+              </div>
             </div>
 
             {/* Subtle floating badge */}
             <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="absolute -bottom-4 -right-4 bg-white/95 backdrop-blur-sm border border-[#E5DFD9] py-3 px-4 rounded-xl shadow-lg flex items-center space-x-2 z-20"
+              animate={{ y: [0, -4, 0] }}
+              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              className="absolute -bottom-4 -right-2 md:-right-6 bg-white/95 backdrop-blur-sm border border-[#E5DFD9] py-2 px-3 md:py-3 md:px-5 rounded-xl shadow-lg flex items-center space-x-2 z-20"
             >
-              <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
-              <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 absolute left-2" />
-              <span className="text-xs font-semibold text-[#23211F]">Available for Opportunities</span>
+              <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-emerald-500 animate-ping" />
+              <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-emerald-500 absolute left-2 md:left-3" />
+              <span className="text-[10px] md:text-xs font-sans font-semibold text-[#23211F] uppercase tracking-wider">Available for Opportunities</span>
             </motion.div>
           </motion.div>
         </div>

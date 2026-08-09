@@ -16,6 +16,12 @@ import artwork2 from '../assets/artwork/artwork2.jpg';
 import artwork3 from '../assets/artwork/artwork3.jpg';
 import artwork4 from '../assets/artwork/artwork4.jpg';
 
+// Import hackathon gallery images
+import nomuraCake from '../assets/hackathons/nomura/cake.jpg';
+import nomuraUser from '../assets/hackathons/nomura/user.jpg';
+import nomuraCert from '../assets/hackathons/nomura/certificate.png';
+import emodioGalleryImg from '../assets/hackathons/emodio/certificate.png';
+
 export const portfolioData = {
   personalInfo: {
     name: "Labdhi Mandovara",
@@ -41,6 +47,16 @@ export const portfolioData = {
   
   skills: [
     {
+      category: "Programming",
+      items: [
+        { name: "Python", level: "Advanced" },
+        { name: "C / C++", level: "Advanced" },
+        { name: "JavaScript", level: "Intermediate" },
+        { name: "Dart", level: "Intermediate" },
+        { name: "HTML & CSS", level: "Advanced" }
+      ]
+    },
+    {
       category: "AI / Machine Learning",
       items: [
         { name: "Deep Learning", level: "Advanced" },
@@ -51,42 +67,33 @@ export const portfolioData = {
       ]
     },
     {
-      category: "Programming Languages",
-      items: [
-        { name: "Python", level: "Advanced" },
-        { name: "C / C++", level: "Advanced" },
-        { name: "JavaScript", level: "Intermediate" },
-        { name: "Dart", level: "Intermediate" },
-        { name: "MATLAB", level: "Advanced" }
-      ]
-    },
-    {
-      category: "Frameworks & Web Dev",
+      category: "Frameworks & Libraries",
       items: [
         { name: "Flask", level: "Advanced" },
         { name: "Flutter", level: "Intermediate" },
-        { name: "HTML & CSS", level: "Advanced" },
         { name: "Vite & React", level: "Intermediate" }
       ]
     },
     {
-      category: "Tools & Cloud Platforms",
+      category: "Developer Tools / Platforms",
       items: [
-        { name: "Google AI Studio", level: "Advanced" },
         { name: "Git & GitHub", level: "Advanced" },
-        { name: "Power BI", level: "Intermediate" },
         { name: "Arduino IDE", level: "Intermediate" },
-        { name: "Keil µVision", level: "Intermediate" }
+        { name: "Keil µVision", level: "Intermediate" },
+        { name: "Google AI Studio", level: "Advanced" },
+        { name: "Power BI", level: "Intermediate" }
       ]
     },
     {
-      category: "Core Concepts",
+      category: "Technical Skills / Concepts",
       items: [
+        { name: "MATLAB", level: "Advanced" },
+        { name: "Data Analysis", level: "Advanced" },
         { name: "Digital Circuits", level: "Advanced" },
         { name: "Signal Processing", level: "Advanced" },
         { name: "Data Structures", level: "Advanced" },
         { name: "API Integration", level: "Advanced" },
-        { name: "Data Analysis", level: "Advanced" }
+        { name: "Power BI", level: "Intermediate" }
       ]
     }
   ],
@@ -146,7 +153,11 @@ export const portfolioData = {
         "Presented Dhan-Saarthi, an AI-powered cross-platform financial life companion with personalized assistance."
       ],
       image: dhanSaarthiImg,
-      tech: ["Flutter", "Google AI Studio", "Python", "API Integration"]
+      tech: ["Flutter", "Google AI Studio", "Python", "API Integration"],
+      role: "Lead AI Integration Developer",
+      description: "Dhan-Saarthi is an AI-powered cross-platform financial life companion providing personalized assistance and predictive wealth management.",
+      learned: "Engineered real-time API integrations and optimized generative AI prompts to deliver instantaneous financial guidance.",
+      gallery: [nomuraCake, nomuraUser, nomuraCert]
     },
     {
       title: "Emodio",
@@ -157,7 +168,11 @@ export const portfolioData = {
         "Built Emodio, an AI-powered vocal biomarker teletherapy solution with an end-to-end ML pipeline."
       ],
       image: emodioImg,
-      tech: ["Python", "Machine Learning", "Vocal Biomarkers", "Signal Processing"]
+      tech: ["Python", "Machine Learning", "Vocal Biomarkers", "Signal Processing"],
+      role: "ML Pipeline Engineer",
+      description: "Emodio is an AI-powered vocal biomarker teletherapy solution utilizing an end-to-end ML pipeline.",
+      learned: "Deepened expertise in signal processing and translating vocal biomarkers into actionable clinical insights.",
+      gallery: [emodioGalleryImg]
     }
   ],
 
