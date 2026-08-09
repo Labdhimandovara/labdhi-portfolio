@@ -6,7 +6,7 @@ Designed with a clean, warm aesthetic and smooth user interactions, the website 
 
 ## 🔗 Live Demo
 
-**Portfolio:** https://labdhi-portfolio-pxen8hn3r-labdhi-mandovaras-projects.vercel.app
+**Portfolio:** https://labdhi-portfolio.vercel.app/
 
 ---
 
