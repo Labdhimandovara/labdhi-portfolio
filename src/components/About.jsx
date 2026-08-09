@@ -20,7 +20,7 @@ export default function About() {
         {/* Section Heading */}
         <div className="text-left mb-16 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">My Story</span>
-          <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-[#23211F]">
+          <h2 className="text-3xl md:text-5xl font-display font-semibold tracking-tight text-[#23211F]">
             Authentic & Approachable
           </h2>
           <div className="w-16 h-1 bg-[#C87A53] mt-2 rounded-full" />
@@ -38,7 +38,7 @@ export default function About() {
             </p>
             
             <div className="p-5 border-l-2 border-[#C87A53] bg-[#F4EFEA]/40 rounded-r-xl space-y-2">
-              <h4 className="font-display font-bold text-[#23211F] text-base flex items-center">
+              <h4 className="font-display font-medium text-[#23211F] text-base flex items-center">
                 <BookOpen size={16} className="mr-2 text-[#C87A53]" />
                 Philosophy: Creativity Meets Technology
               </h4>

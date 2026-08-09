@@ -23,7 +23,7 @@ export default function Skills() {
         {/* Section Heading */}
         <div className="text-left mb-16 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">Skills Directory</span>
-          <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-[#23211F]">
+          <h2 className="text-3xl md:text-5xl font-display font-semibold tracking-tight text-[#23211F]">
             Interactive Technical Skills
           </h2>
           <p className="text-sm text-[#706C68] max-w-lg font-light leading-relaxed">

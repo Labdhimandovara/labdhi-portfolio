@@ -78,7 +78,7 @@ export default function Hero() {
             className="space-y-2"
           >
             <h2 className="text-sm uppercase tracking-widest font-semibold text-[#706C68] font-sans">Hello, I am</h2>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] xl:text-[4.5rem] font-display font-bold tracking-tight text-[#23211F] leading-[1.1] whitespace-nowrap overflow-visible">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] xl:text-[4.5rem] font-display font-medium tracking-tight text-[#23211F] leading-[1.1] whitespace-nowrap overflow-visible">
               {name}
             </h1>
             <div className="h-10 flex items-center text-xl md:text-2xl font-sans font-bold text-[#C87A53] pt-1">

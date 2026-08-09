@@ -26,7 +26,7 @@ export default function Contact() {
         {/* Section Heading */}
         <div className="text-left mb-16 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">Get in Touch</span>
-          <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-[#23211F]">
+          <h2 className="text-3xl md:text-5xl font-display font-semibold tracking-tight text-[#23211F]">
             Let's Collaborate
           </h2>
           <p className="text-sm text-[#706C68] max-w-lg font-light leading-relaxed">
@@ -40,7 +40,7 @@ export default function Contact() {
           {/* Left: Contact Info & Channels */}
           <div className="lg:col-span-5 text-left space-y-8">
             <div className="space-y-4">
-              <h3 className="text-2xl font-display font-bold text-[#23211F]">Direct Channels</h3>
+              <h3 className="text-2xl font-display font-medium text-[#23211F]">Direct Channels</h3>
               <p className="text-sm text-[#706C68] font-light">Feel free to reach out directly via email, phone, or connect on professional socials.</p>
             </div>
 
@@ -99,7 +99,7 @@ export default function Contact() {
           <div className="lg:col-span-7 bg-white border border-[#E5DFD9] p-8 rounded-3xl shadow-sm relative overflow-hidden flex items-center">
             <div className="w-full text-left space-y-6">
               <div className="space-y-2">
-                <h3 className="text-2xl font-display font-bold text-[#23211F]">Professional Profiles</h3>
+                <h3 className="text-2xl font-display font-medium text-[#23211F]">Professional Profiles</h3>
                 <p className="text-sm text-[#706C68] font-light leading-relaxed max-w-xl">
                   Connect with me on LinkedIn or check my GitHub to see my work and projects.
                 </p>

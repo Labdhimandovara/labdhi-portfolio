@@ -19,7 +19,7 @@ export default function Projects() {
         {/* Section Heading */}
         <div className="text-left mb-20 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">Case Studies</span>
-          <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-[#23211F]">
+          <h2 className="text-3xl md:text-5xl font-display font-semibold tracking-tight text-[#23211F]">
             Featured Projects
           </h2>
           <p className="text-sm text-[#706C68] max-w-lg font-light leading-relaxed">
@@ -69,7 +69,7 @@ export default function Projects() {
                   </span>
 
                   {/* Title */}
-                  <h3 className="text-3xl md:text-4xl font-display font-black tracking-tight text-[#23211F]">
+                  <h3 className="text-3xl md:text-4xl font-display font-semibold tracking-tight text-[#23211F]">
                     {project.title}
                   </h3>
 

@@ -17,7 +17,7 @@ export default function Timeline() {
         {/* Section Heading */}
         <div className="text-left mb-16 space-y-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-[#C87A53]">Journey</span>
-          <h2 className="text-3xl md:text-5xl font-display font-black tracking-tight text-[#23211F]">
+          <h2 className="text-3xl md:text-5xl font-display font-semibold tracking-tight text-[#23211F]">
             Experience & Achievements
           </h2>
           <div className="w-16 h-1 bg-[#C87A53] mt-2 rounded-full" />

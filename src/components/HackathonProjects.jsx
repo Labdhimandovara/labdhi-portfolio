@@ -31,7 +31,7 @@ export default function HackathonProjects() {
     <section id="hackathon-projects" className="py-24 bg-[#FAF8F5] border-t border-[#E5DFD9]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-left mb-20 space-y-2">
-          <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight text-[#23211F]">
+          <h2 className="text-3xl md:text-5xl font-display font-medium tracking-tight text-[#23211F]">
             Hackathons
           </h2>
           <p className="text-sm text-[#706C68] max-w-lg font-light leading-relaxed font-sans">
@@ -64,7 +64,7 @@ export default function HackathonProjects() {
                 </div>
 
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-display font-bold tracking-tight text-[#23211F] group-hover:text-[#C87A53] transition-colors">
+                  <h3 className="text-2xl font-display font-medium tracking-tight text-[#23211F] group-hover:text-[#C87A53] transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-xs font-bold uppercase tracking-wider text-[#706C68] font-sans">
@@ -120,7 +120,7 @@ export default function HackathonProjects() {
                 <span className="font-sans text-xs font-bold uppercase tracking-widest text-[#706C68] block">
                   {activeProject.event}
                 </span>
-                <h2 className="text-2xl font-display font-bold text-[#23211F]">
+                <h2 className="text-2xl font-display font-medium text-[#23211F]">
                   {activeProject.title}
                 </h2>
               </div>
