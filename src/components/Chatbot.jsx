@@ -14,7 +14,7 @@ const Chatbot = () => {
           type: "PARENT_ORIGIN",
           origin: window.location.origin,
         },
-        "https://chat-widget.sicada.ai"
+        "https://chat-widget.sicada.ai/06a7216f-3a7f-75b8-8000-e81e525b5359?type=chat"
       );
     };
 
