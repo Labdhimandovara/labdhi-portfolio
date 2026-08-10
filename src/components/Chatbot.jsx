@@ -1,9 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const Chatbot = () => {
+  const iframeRef = useRef(null);
+
   useEffect(() => {
+    const iframe = iframeRef.current;
+
+    if (!iframe) return;
+
+    const handleLoad = () => {
+      iframe.contentWindow?.postMessage(
+        {
+          type: "PARENT_ORIGIN",
+          origin: window.location.origin,
+        },
+        "https://chat-widget.sicada.ai"
+      );
+    };
+
     const handleMessage = (e) => {
-      const iframe = document.getElementById("widget-iframe");
       if (!iframe || e.source !== iframe.contentWindow) return;
 
       if (e.data?.type === "widget:resize") {
@@ -12,13 +27,18 @@ const Chatbot = () => {
       }
     };
 
+    iframe.addEventListener("load", handleLoad);
     window.addEventListener("message", handleMessage);
 
-    return () => window.removeEventListener("message", handleMessage);
+    return () => {
+      iframe.removeEventListener("load", handleLoad);
+      window.removeEventListener("message", handleMessage);
+    };
   }, []);
 
   return (
     <iframe
+      ref={iframeRef}
       id="widget-iframe"
       src="https://chat-widget.sicada.ai/06a7216f-3a7f-75b8-8000-e81e525b5359?type=chat"
       title="Portfolio Chatbot"
